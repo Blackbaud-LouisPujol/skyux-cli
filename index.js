@@ -179,6 +179,9 @@ function processArgv(argv) {
     case 'install':
       require('./lib/install')(argv);
       break;
+    case 'swagger':
+      require('./lib/swagger')(argv);
+      break;
     default:
       isInternalCommand = false;
   }
